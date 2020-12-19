@@ -13,8 +13,8 @@ export const ExpenseRow = (expenseObject) => {
       <td>${thisCategory.name}</td>
       <td>${expenseObject.vendor}</td>
       <td>$${expenseObject.amount}</td>
-      <td><i class="fas fa-edit" id="editExpense--${expenseObject.id}"></i></td>
-      <td><i class="fas fa-trash-alt" id="deleteExpense--${expenseObject.id}"></i></td>
+      <td><i class="fas fa-edit editButton" id="editExpense--${expenseObject.id}"></i></td>
+      <td><i class="fas fa-trash-alt deleteButton" id="deleteExpense--${expenseObject.id}"></i></td>
     </tr>
   `;
 };

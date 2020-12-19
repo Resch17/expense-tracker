@@ -36,3 +36,15 @@ export const deleteExpense = (expenseId) => {
     .then(getExpenses)
     .then(dispatchStateChangeEvent);
 };
+
+export const editExpense = (expenseObject) => {
+  return fetch(`${expensesApi}/${expenseObject.id}`, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(expenseObject)
+  })
+  .then(getExpenses)
+  .then(dispatchStateChangeEvent)
+}

@@ -1,50 +1,12 @@
 {
   "expenses": [
     {
-      "id": 1,
-      "vendor": "Tailgate",
+      "amount": "13.99",
       "categoryId": 1,
-      "amount": 12.99,
+      "vendor": "Tailgate",
       "date": "2020-12-18",
-      "dateEntered": 1608341325
-    },
-    {
-      "id": 2,
-      "vendor": "Toyota Financial",
-      "categoryId": 4,
-      "amount": 72.99,
-      "date": "2020-12-18",
-      "dateEntered": 1608341330
-    },
-    {
-      "amount": "100.99",
-      "categoryId": 3,
-      "vendor": "St. Jude's",
-      "date": "2020-12-19",
-      "dateEntered": "2020-12-19T03:27:02.528Z",
-      "id": 3
-    }
-  ],
-  "categories": [
-    {
-      "id": 1,
-      "name": "Food"
-    },
-    {
-      "id": 2,
-      "name": "Personal"
-    },
-    {
-      "id": 3,
-      "name": "Charity"
-    },
-    {
-      "id": 4,
-      "name": "Loans"
-    },
-    {
-      "id": 5,
-      "name": "Gas"
+      "dateEntered": "2020-12-19T04:35:21.129Z",
+      "id": 1
     }
   ]
 }

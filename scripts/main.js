@@ -1,7 +1,9 @@
-import { getExpenses } from './ExpenseProvider.js';
-import { selectList } from './CategorySelect.js';
-import { expenseList } from './ExpenseList.js';
-import './ExpenseForm.js'
+import './CategorySelect.js';
+import './EditCategorySelect.js';
+import './ExpenseList.js';
+import './ExpenseForm.js';
+import './EditDialog.js'
 
-selectList();
-expenseList();
+
+
+

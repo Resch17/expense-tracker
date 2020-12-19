@@ -1,11 +1,11 @@
 import { useCategories } from './CategoryProvider.js';
 
 const eventHub = document.querySelector('.container');
-const selectTarget = document.querySelector('#categorySelectContainer');
+const selectTarget = document.querySelector('#categorySelectContainerEdit');
 
 eventHub.addEventListener('change', (evt) => {
   if (evt.target.id === 'categorySelect') {
-    const customEvent = new CustomEvent('categoryChosen', {
+    const customEvent = new CustomEvent('categoryChosenEdit', {
       detail: {
         categoryThatWasChosen: parseInt(evt.target.value),
       },
@@ -16,7 +16,7 @@ eventHub.addEventListener('change', (evt) => {
 
 const render = (categoryArray) => {
   selectTarget.innerHTML = `
-  <select class="dropdown" id="categorySelect">
+  <select class="dropdown" id="categorySelectEdit">
     <option value="0">Please select a category...</option>
     ${categoryArray
       .sort((a, b) => a.name.localeCompare(b.name))
@@ -28,9 +28,9 @@ const render = (categoryArray) => {
   `;
 };
 
-const selectList = () => {
+const selectListEdit = () => {
   const categories = useCategories();
   render(categories);
 };
 
-selectList();
+selectListEdit();

@@ -1,9 +1,9 @@
-import { saveExpense } from './ExpenseProvider.js';
+import { saveExpense, useExpenses } from './ExpenseProvider.js';
 
 const eventHub = document.querySelector('.container');
 
 const amountInput = document.querySelector('#amountInput');
-const categorySelect = document.querySelector('#categorySelect');
+let categorySelect = document.querySelector('#categorySelect');
 let categoryId;
 const vendorInput = document.querySelector('#vendorInput');
 const dateInput = document.querySelector('#dateInput');
@@ -83,8 +83,13 @@ const submitExpense = () => {
   };
 
   saveExpense(newExpense);
+  amountInput.value = '';
+  vendorInput.value = '';
+  dateInput.value = '';
+  categorySelect.value = '0';
 };
 
 submitButton.addEventListener('click', () => {
   submitExpense();
 })
+

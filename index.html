@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Expense Tracker</title>
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   </head>
@@ -11,7 +11,7 @@
     <main class="container">
       <div class="form-control expense-form">
         <div class="input-form">
-          <label for="amountInput">Amount spent:</label><input type="text" id="amountInput" />
+          <label for="amountInput">Amount spent:</label><input type="text" id="amountInput" autocomplete="off"/>
         </div>
         <div class="input-form">
           <label for="categorySelect">Category:
@@ -19,7 +19,7 @@
           <div id="categorySelectContainer"></div>
         </div>
         <div class="input-form">
-          <label for="vendorInput">Vendor:</label><input type="text" id="vendorInput" />
+          <label for="vendorInput">Vendor:</label><input type="text" id="vendorInput" autocomplete="off"/>
         </div>
         <div class="input-form">
           <label for="dateInput">Date of Purchase:</label><input type="date" id="dateInput" />
@@ -46,6 +46,30 @@
           </tbody>
         </table>
       </div>
+      <dialog class="edit-dialog" id="editDialog">
+        <input type="hidden" id="editId">
+        <div class="dialog-close-container">
+          <button id="closeDialog">Close</button>
+        </div>
+        <div class="form-control edit-form">
+          <div class="input-form">
+            <label for="amountInputEdit">Amount spent:</label><input type="text" id="amountInputEdit" autocomplete="off"/>
+          </div>
+          <div class="input-form">
+            <label for="categorySelectEdit">Category:
+            </label>
+            <div id="categorySelectContainerEdit"></div>
+          </div>
+          <div class="input-form">
+            <label for="vendorInputEdit">Vendor:</label><input type="text" id="vendorInputEdit" autocomplete="off"/>
+          </div>
+          <div class="input-form">
+            <label for="dateInputEdit">Date of Purchase:</label><input type="date" id="dateInputEdit" />
+          </div>
+          <div class="button-container">
+            <button id="submitEdit">Save Edited Expense</button>
+          </div>
+      </dialog>
     </main>
 
     <script src="./scripts/main.js" type="module"></script>
