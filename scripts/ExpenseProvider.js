@@ -1,5 +1,5 @@
 let expenses = [];
-const expensesApi = 'http:localhost:8088/expenses';
+const expensesApi = 'http://localhost:8088/expenses';
 const eventHub = document.querySelector('.container');
 
 const dispatchStateChangeEvent = () => {
