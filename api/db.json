@@ -1,0 +1,42 @@
+{
+  "expenses":[
+    {
+      "id": 1,
+      "vendor": "Tailgate",
+      "categoryId": 1,
+      "amount": 12.99,
+      "date": "2020-12-18",
+      "dateEntered": 1608341325      
+    },
+    {
+      "id": 1,
+      "vendor": "Toyota Financial",
+      "categoryId": 4,
+      "amount": 72.99,
+      "date": "2020-12-18",
+      "dateEntered": 1608341330      
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Food"
+    },
+    {
+      "id": 2,
+      "name": "Personal"
+    },
+    {
+      "id": 3,
+      "name": "Charity"
+    },
+    {
+      "id": 4,
+      "name": "Loans"
+    },
+    {
+      "id": 5,
+      "name": "Gas"
+    }
+  ]
+}
