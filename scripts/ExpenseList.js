@@ -7,7 +7,6 @@ const listTarget = document.querySelector('.expense-target');
 export const expenseList = () => {
   getExpenses().then(() => {
     let expenses = useExpenses();
-
     listTarget.innerHTML = expenses.map((expense) => ExpenseRow(expense)).join('');
   });
 };
